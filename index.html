@@ -3,80 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Selamat Ulang Tahun</title>
-
-<style>
-body{
-margin:0;
-background:linear-gradient(135deg,#ff9ec4,#ffd6e7);
-font-family:Arial,sans-serif;
-display:flex;
-justify-content:center;
-align-items:center;
-height:100vh;
-text-align:center;
-color:white;
-overflow:hidden;
-}
-
-.card{
-background:rgba(255,255,255,0.15);
-padding:30px;
-border-radius:20px;
-backdrop-filter:blur(10px);
-width:85%;
-max-width:400px;
-}
-
-button{
-padding:12px 24px;
-font-size:18px;
-border:none;
-border-radius:30px;
-background:#ff4f81;
-color:white;
-cursor:pointer;
-}
-
-#pesan{
-display:none;
-margin-top:20px;
-font-size:18px;
-line-height:1.6;
-}
-</style>
-
+<title>Tes Tombol</title>
 </head>
 <body>
 
-<div class="card">
-<h1>🎉 Selamat Ulang Tahun 🎂</h1>
+<h1>Tes Tombol</h1>
 
-<p>Haiii, ada sesuatu buat kamu 💖</p>
-
-  <button id="btn">Buka Hadiah 🎁</button>
-
-<div id="pesan">
-<h2>💐 Happy Birthday 💐</h2>
-
-<p>
-Semoga semua impianmu tercapai, selalu sehat, selalu bahagia, dan semoga hari-harimu dipenuhi senyuman. Terima kasih sudah menjadi seseorang yang spesial. 🌹❤️
-</p>
-
-<p>— Dari seseorang yang selalu mendoakanmu 🤍</p>
-
-</div>
-
-</div>
-
-<script>
-const btn = document.getElementById("btn");
-const pesan = document.getElementById("pesan");
-
-btn.addEventListener("click", function () {
-  pesan.style.display = "block";
-});
-</script>
+<button onclick="alert('Berhasil diklik!')">
+Buka Hadiah 🎁
+</button>
 
 </body>
 </html>
