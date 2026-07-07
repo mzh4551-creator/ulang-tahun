@@ -54,7 +54,7 @@ line-height:1.6;
 
 <p>Haiii, ada sesuatu buat kamu 💖</p>
 
-<button onclick="buka()">Buka Hadiah 🎁</button>
+  <button id="btn">Buka Hadiah 🎁</button>
 
 <div id="pesan">
 <h2>💐 Happy Birthday 💐</h2>
@@ -70,9 +70,12 @@ Semoga semua impianmu tercapai, selalu sehat, selalu bahagia, dan semoga hari-ha
 </div>
 
 <script>
-function buka(){
-document.getElementById("pesan").style.display="block";
-}
+const btn = document.getElementById("btn");
+const pesan = document.getElementById("pesan");
+
+btn.addEventListener("click", function () {
+  pesan.style.display = "block";
+});
 </script>
 
 </body>
